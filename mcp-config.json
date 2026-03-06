@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "my-server": {
+      "command": "python",
+      "args": [
+        "-m",
+        "my_mcp_server.server"
+      ],
+      "env": {}
+    },
+    "filesystem": {
+      "command": "python",
+      "args": [
+        "-m",
+        "fast_mcp_server.filesystem_server",
+        "/home/nbk"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
